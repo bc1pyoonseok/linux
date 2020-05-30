@@ -1,0 +1,13 @@
+우분투 dummy output(가짜 출력) 해결법
+
+https://velog.io/@benomadwill/ubuntu-sound-issue-dummy-output
+
+이 링크를 타고 들어간다.
+터미널 창을 열어서 cd / 하면
+cd /etc/modprob.d파일이 있다
+들어가서 alsa-base.conf파일의 마지막줄에
+ options snd-hda-intel dmic_detect=0 이 코드를 추가하면 되는데 파일이 read-only이므로
+sudo vi alsa-base.conf로 접근한후 i를 눌러 수정모드로 전환하고
+:wq!로 저장한다
+$ pulseaudio -k && sudo alsa force-reload 수행후
+$ sudo reboot 해주면 끝
