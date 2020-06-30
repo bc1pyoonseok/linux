@@ -1,0 +1,8 @@
+ibus로 설정하게 된다면 크롬에서 한글 입력에 문재가 생길 수 있다.
+따라서 uim으로 설정해야한다.
+http://progtrend.blogspot.com/2018/06/ubuntu-1804-uim.html
+
+위 블로그에서 참조하여 설정 하였다.
+1.$ sudo apt install uim
+2.input method 검색
+3.블로그 참조후 리부팅
