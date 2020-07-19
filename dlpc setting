@@ -1,2 +1,4 @@
 dlpc에 conda 설치하는법
 https://www.rosehosting.com/blog/how-to-install-the-anaconda-python-distribution-on-ubuntu-16-04/
++conda commad not found 뜨면
+터미널에 export PATH=~/anaconda3/bin:$PATH 를 /tmp/에서 해준다
