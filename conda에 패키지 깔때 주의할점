@@ -1,0 +1,2 @@
+env activate하고 pip install로 깔면 안되고 conda install로 설치 해야 가상환경에 잘 깔림
+
