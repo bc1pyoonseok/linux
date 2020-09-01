@@ -1,0 +1,22 @@
+https://jimnong.tistory.com/676
+
+먼저 제어판에서 빠른시작을 끈다
+
+그후 저 글에서 바이오스의 모드를 확인한다. 레노버 T440의 경우 legacy mod였다.
+
+win+r 키를 누르고 diskmgmt.msc를 누르고 파티션을 생성한다
+
+전원을 끄고 바이오스 진입후 secure boot 끄고 boot 우선순위를 usb가 젤 최선이게 바꾼다.
+
+또 부트 모드를 uefi only로 바꾸고 usb를 꼽는다.
+
+usb로 부팅후 우분투 설치가 뜨면 먼저 swap영역을 ext4로 만든다 (대충 8기가로 잡음)
+나머지 공간에 우분투 설치 마운트 포인트는 / 영역 역시 ext4
+부트로더 설치할 위치는 /dev/sda로 디폴트다
+설치후 다시 바이오스 진입해서 legacy모드로 전환해준다.
+
+그러고 바로 window가 켜지면 usb 꼽아서 우분투 키고 try 우분투후 boot repair이용한다 (구글에 boot repair 검색)
+
+내 경우 이러면 이제 바로 리눅스가 켜졌다.
+
+다시 boot repair를 설치후 재부팅하니 성공했다.
